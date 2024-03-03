@@ -1,0 +1,38 @@
+@import './_vars.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: $white;
+  font-family: 'Jost', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+}
+
+#root {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $dgrey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* .comforter-regular {
+  font-family: "Comforter", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
