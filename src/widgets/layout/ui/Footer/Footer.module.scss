@@ -1,0 +1,14 @@
+@import '../../../../shared/_vars.scss';
+
+.footer {
+  padding: 0 20px;
+  background-color: $dgrey;
+}
+
+.footer_wrapper {
+  height: 50px;
+  border-top: 2px solid $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

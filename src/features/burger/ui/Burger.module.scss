@@ -1,0 +1,100 @@
+@import '../../../shared/_vars.scss';
+
+.wrapper {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    transform: scaleX(1.1);
+    transition: 0.25s;
+  }
+
+  &.open {
+    .burger {
+      span {
+        width: 0%;
+        &:nth-child(1) {
+          transition: 0.25s ease-in-out 0s;
+        }
+        &:nth-child(2) {
+          transition: 0.25s ease-in-out 0.125s;
+        }
+        &:nth-child(3) {
+          transition: 0.25s ease-in-out 0.25s;
+        }
+      }
+    }
+    .cross {
+      span {
+        &:nth-child(1) {
+          height: 80%;
+          transition: 0.25s ease-in-out 0.625s;
+        }
+      }
+      span {
+        &:nth-child(2) {
+          width: 80%;
+          transition: 0.25s ease-in-out 0.375s;
+        }
+      }
+    }
+  }
+}
+
+span {
+  display: block;
+  background: $white;
+  border-radius: 2px;
+}
+
+.burger {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  span {
+    width: 40px;
+    height: 5px;
+    position: relative;
+    left: 5px;
+    margin: 8.75px 0;
+    &:nth-child(1) {
+      transition: 0.25s ease-in-out 0.5s;
+    }
+    &:nth-child(2) {
+      transition: 0.25s ease-in-out 0.625s;
+    }
+    &:nth-child(3) {
+      transition: 0.25s ease-in-out 0.75s;
+    }
+  }
+}
+
+.cross {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: rotate(45deg);
+
+  span {
+    &:nth-child(1) {
+      height: 0%;
+      width: 5px;
+      position: absolute;
+      top: 5%;
+      left: 25px;
+      transition: 0.25s ease-in-out 0s;
+    }
+    &:nth-child(2) {
+      width: 0%;
+      height: 5px;
+      position: absolute;
+      left: 5%;
+      top: 25px;
+      transition: 0.25s ease-in-out 0.25s;
+    }
+  }
+}
