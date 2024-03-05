@@ -6,6 +6,7 @@
   position: relative;
   cursor: pointer;
   transition: 0.25s ease-in-out;
+  z-index: 999;
 
   &:hover {
     transform: scaleX(1.1);
